@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { connect } from 'react-redux'
 import ArticleSearch from './ArticleSearch';
 import ArticleList from './ArticleList';
 import ArticleDisplay from './ArticleDisplay';
@@ -26,9 +25,5 @@ const ArticleHome = props => {
     </Fragment>
   )
 }
-
-const mapStateToProps = state => ({
-
-})
 
 export default ArticleHome

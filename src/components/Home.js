@@ -10,11 +10,6 @@ const Home = () => {
     'Wikipedia API': 'no auth',
     'Youtube API': 'App Key auth through Google Cloud Console'
   }
-  const features = {
-    "Convenient UI": "Searching and selecting results is made easy, and includes external links",
-    'Minimized API Calls': "Search function is debounced and memoized",
-    "State History": "History of selected media is navigable for each individual API"
-  }
 
   const addLabelEmphasis = ({ target }) => { target.classList.add('hover'); target.classList.add('red'); }
   const removeLabelEmphasis = ({ target }) => { target.classList.remove('hover'); target.classList.remove('red'); }
