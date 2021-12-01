@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import AppLink from './layout/AppLink'
 
 const Home = () => {
   const packages = {
@@ -28,7 +29,9 @@ const Home = () => {
               <div className="description">Find music by artist, track, or album</div>
             </div>
             <div className="extra content">
-              <div className="ui green button">Go</div>
+              <AppLink to='/music' >
+                <div className="ui green button">Go</div>
+              </AppLink>
             </div>
           </div>
           <div className="ui card">
@@ -39,7 +42,9 @@ const Home = () => {
               <div className="description">Find information about anything on the planet</div>
             </div>
             <div className="extra content">
-              <div className="ui green button">Go</div>
+              <AppLink to="/wiki">
+                <div className="ui green button">Go</div>
+              </AppLink>
             </div>
           </div>
           <div className="ui card">
@@ -50,7 +55,9 @@ const Home = () => {
               <div className="description">Find and play your favorite internet vids</div>
             </div>
             <div className="extra content">
-              <div className="ui green button">Go</div>
+              <AppLink to="/youtube">
+                <div className="ui green button">Go</div>
+              </AppLink>
             </div>
           </div>
         </div>
