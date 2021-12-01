@@ -21,7 +21,7 @@ const Home = () => {
       <h2 className='ui header'>This simple project connects to three external APIs to demonstrate knowledge of how to use endpoints and use the resulting data.</h2>
       <div className="ui basic segment">
         <div className="ui three cards">
-          <div className="ui card">
+          <div className="ui green card">
             <div className="content">
               <i className="green right floated big ui spotify icon" />
               <div className="header">Spotify</div>
@@ -34,7 +34,7 @@ const Home = () => {
               </AppLink>
             </div>
           </div>
-          <div className="ui card">
+          <div className="ui green card">
             <div className="content">
               <i className="gray right floated big  ui wikipedia w icon" ></i>
               <div className="header">Wikipedia</div>
@@ -47,7 +47,7 @@ const Home = () => {
               </AppLink>
             </div>
           </div>
-          <div className="ui card">
+          <div className="ui green card">
             <div className="content">
               <i className="red right floated big ui youtube icon" />
               <div className="header">YouTube</div>
