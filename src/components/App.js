@@ -1,22 +1,37 @@
-import SongDetail from "./SongDetail";
-import SongList from "./SongList";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { connect } from "react-redux";
+import './App.css';
+import MusicHome from "./music/MusicHome";
+import { Fragment } from "react";
+import NavBar from "./layout/NavBar";
+import Home from "./Home";
+import NotFound from './layout/NotFound';
+import ArticleHome from './wiki/ArticleHome';
+import VideoHome from './video/VideoHome';
 
 const App = () => {
+
   return (
-    <div className='ui container grid'>
-      <div className='ui row'>
-        <h1 className='ui header'>Your Songs</h1>
-      </div>
-      <div className='ui row'>
-        <div className='column eight wide'>
-          <SongList />
+    <Router>
+      <Fragment>
+        <div className='ui container'>
+          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/music" element={<MusicHome />} />
+            <Route exact path="/wiki" element={<ArticleHome />} />
+            <Route exact path="/youtube" element={<VideoHome />} />
+            <Route element={<NotFound />} />
+          </Routes>
         </div>
-        <div className='column eight wide'>
-          <SongDetail />
-        </div>
-      </div>
-    </div>
+
+      </Fragment>
+    </Router>
   )
 }
-export default App;
+
+const mapStateToProps = state => ({
+
+})
+
+export default connect(mapStateToProps)(App);

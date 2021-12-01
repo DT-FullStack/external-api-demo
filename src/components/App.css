@@ -1,0 +1,51 @@
+#MusicTypes .toggle.checkbox {
+  margin: 3px 5px
+}
+
+.description.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+.description.flex .label {
+  margin: 3px 1px
+}
+
+.ui.menu .item.icon.condensed {
+  margin:0;
+  padding:0;
+}
+.ui.menu .item.shrinkable{
+  flex-shrink: 1;
+}
+
+.ui.link.list .item.link {
+  cursor: pointer;
+}
+.ui.link.list .item.link:hover{
+  color: rgba(0,0,0,0.8);
+}
+
+.ui.list .item.clickable {
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.ui.list .item.clickable:hover {
+  background-color: rgba(230,230,230,0.3);
+}
+.ui.list .item.active {
+  background-color: rgba(230,230,230,0.35);
+}
+
+span.searchmatch {
+  font-weight: bolder;
+}
+
+.ui.basic.segment .ui.label {
+  cursor: default;
+  margin: 3px 5px;
+  transition: transform 300ms, color 300ms, background-color 300ms;
+}
+.ui.basic.segment .ui.label.hover {
+  transform: translateY(-5px);
+}
