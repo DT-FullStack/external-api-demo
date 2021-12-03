@@ -17,12 +17,11 @@ const Home = () => {
 
   const [showingDetails, setShowingDetails] = useState(false);
   const arrowClass = () => showingDetails ? 'angle right spin90 icon' : 'angle right icon';
-  const toggleClass = () => showingDetails ? 'toggle active' : 'toggle';
   const toggle = () => setShowingDetails(!showingDetails);
 
   return (
     <Fragment>
-      <h1 className='ui green header'>Utilizing External APIs</h1>
+      <h1 className='ui green header'>Multimedia Search Engine</h1>
       <h2 className='ui header'>This simple project connects to three external APIs to demonstrate knowledge of how to use endpoints and use the resulting data.</h2>
 
       <div id="APIS" className="ui basic segment">
@@ -72,14 +71,20 @@ const Home = () => {
       <div className="ui divider"></div>
 
       <div id="HIGHLIGHTS" className="ui basic segment">
-        <h3 className='ui red header' onClick={toggle}><i className={arrowClass()}></i>Project Highlights</h3>
+        <h3 className='ui red header toggle' onClick={toggle}><i className={arrowClass()}></i>Project Highlights</h3>
         {showingDetails && (
           <Fragment>
             <div className="ui three cards">
               <div className="ui raised red card">
                 <div className="content">
                   <div className="header">Convenient UI</div>
-                  <div className="description">Searching and selecting results is made easy, and includes external links</div>
+                  <div className="description">
+                    <div className="ui list">
+                      <div className='item'>Searching and selecting results is made easy</div>
+                      <div className='item'>Provides external links for more details</div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="ui raised red card">
@@ -120,9 +125,6 @@ const Home = () => {
             </div>
           </Fragment>
         )}
-        <div className={toggleClass()}>
-
-        </div>
       </div>
 
 
