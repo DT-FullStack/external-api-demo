@@ -49,3 +49,10 @@ span.searchmatch {
 .ui.basic.segment .ui.label.hover {
   transform: translateY(-5px);
 }
+
+i.icon {
+  transition: transform 300ms;
+}
+i.icon.spin90 {
+  transform: rotate(90deg);
+}
